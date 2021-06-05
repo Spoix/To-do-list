@@ -1,0 +1,39 @@
+#project-listing {
+
+    border-radius: 0.5rem;
+    margin-right: 2rem;
+    height: 90%;
+    text-align: center;
+    background-color: rgb(119, 159, 170);
+
+
+    p {
+        font-weight: bold;
+        color: white;
+        font-size: 3rem;
+        margin: 0;
+        border-radius: 1rem;
+        width: 70%;
+        margin: 0.5rem auto;
+    }
+
+    button {
+        width: 40%;
+        font-size: 1.5rem;
+        cursor: pointer;
+        background-color: black;
+        border: none;
+        border-radius: 1rem;
+        padding: 0.5rem;
+        color: white;
+        font-weight: bold;
+        box-shadow: 10px 10px 14px -7px rgba(0,0,0,0.75);
+    }
+
+    button:hover {
+        color: black;
+        background-color: white;
+        border: none;
+        transition: 0.5s;
+    }
+}

@@ -4,8 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>Setting your goals</title>
 </head>
 <body>
+    <div id="container">
+
+        <!-- Header portion -->
+        <div id="header">
+            <div id="logo">
+                <p id="logo-title">
+                    <span id="to" class="logo-text">to.</span>
+                    <span id="do" class="logo-text">do.</span>
+                </p>
+                <p id="logo-subtitle">
+                    <span class="logo-text">set your.</span>
+                    <span class="logo-text">goals</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Showcase area -->
+        <div id="showcase">
+            <div id="project-listing">
+                <p>my Goals</p>
+                <button type="button">Add goal</button>
+                <div id="list">
+
+                </div>
+            </div>
+            <div id="project-showcase">
+                <div id="showcase-header">
+                    <span id="project-name">Project name test</span>
+                    <div id="project-showcase-menu">
+                        <a class="showcase-buttons">Details</a>
+                        <a class="showcase-buttons">Checklist</a>
+                    </div>
+                </div>
+                <div id="showcase-config">
+                    <div id="due-date" class="config-item">
+                        <span>Due date</span>
+                        <span>12/05/2021</span>
+                    </div>
+                    <div id="priority" class="config-item">
+                        <span>Priority</span>
+                        <span>Medium</span>
+                    </div>
+                </div>
+
+                <div id="showcase-display">
+        <!-- This changes to also display 'checklist details' -->
+                    <div id="showcase-header">
+                        <span>Project details</span>
+                    </div>
+        <!-- This changes to also display the checklist area -->
+                    <div id="showcase-display-content">
+                        <textarea></textarea>
+                        <div id="button-area">
+                            <button type="button">CONFIRM</button>
+                            <button type="button">CANCEL</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,9 @@
+#showcase {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+
+    #showcase-header {
+        display: flex;
+
+    }
+}

@@ -1,0 +1,33 @@
+#header {
+    
+    
+    .logo-text {
+        font-size: 8rem;
+    }
+
+    #logo {
+        display: flex;
+        justify-content: space-between;
+
+        #logo-title {
+
+            span:nth-child(1) {
+                margin-left: 4rem;
+                font-weight: bold;
+            }
+        
+            span:nth-child(2) {
+                font-weight: bold;
+                color: white;
+            }
+        }
+
+        #logo-subtitle {
+            margin-right: 4rem;
+    
+            span:nth-child(1) {
+                color: white;
+            }
+        }
+    }   
+}

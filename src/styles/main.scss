@@ -1,8 +1,8 @@
 @use './utilities/normalize';
-@use './utilities/utilities';
+@use './utilities/bodygrid';
+@use './utilities/container';
+@use './utilities/header';
+@use './utilities/main-showcase';
 
 
-body {
-    display: flex;
-    flex-direction: column;
-}
+
