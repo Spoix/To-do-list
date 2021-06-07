@@ -1,11 +1,15 @@
 import "../styles/main.scss"
-import { myUtilities } from "./utilities"
+import { showDetails, showChecklist, showHome } from './project-showcase-func'
+
+
+(function projectShowcaseFunc() {
+    showDetails();
+    showChecklist();
+    showHome();
+})();
 
 
 
-
-
-myUtilities()
 
 
 
