@@ -4,8 +4,9 @@ import { deleteItem, checkItem, addItem } from './checklist-func'
 
 
 const showDetails = function () {
-    domElements.projectShowcase.selectDetails.addEventListener("click", () => {
-        domElements.projectShowcase.showcaseDisplay.innerHTML = `
+    domElements.projectShowcase.selectDetails().addEventListener("click", () => {
+        domElements.projectShowcase.showcaseDisplay().classList.remove("home-image")
+        domElements.projectShowcase.showcaseDisplay().innerHTML = `
         <div id="showcase-header">
             <span>Project details</span>
         </div>
@@ -17,13 +18,13 @@ const showDetails = function () {
             </div>
         </div> 
         `
-        domElements.projectShowcase.showcaseDisplay.classList.remove("home-image")
     });
 };
 
 const showChecklist = function () {
-    domElements.projectShowcase.selectChecklist.addEventListener("click", () => {
-        domElements.projectShowcase.showcaseDisplay.innerHTML = `
+    domElements.projectShowcase.selectChecklist().addEventListener("click", () => {
+        domElements.projectShowcase.showcaseDisplay().classList.remove("home-image")
+        domElements.projectShowcase.showcaseDisplay().innerHTML = `
         <div id="showcase-header">
             <span>Project checklist</span>
         </div>
@@ -33,18 +34,17 @@ const showChecklist = function () {
         deleteItem();
         checkItem();
         addItem();
-        domElements.projectShowcase.showcaseDisplay.classList.remove("home-image")
     })
 }
 
 const showHome = function () {
-    domElements.projectShowcase.selectHome.addEventListener("click", () => {
-        domElements.projectShowcase.showcaseDisplay.innerHTML = `
+    domElements.projectShowcase.selectHome().addEventListener("click", () => {
+        domElements.projectShowcase.showcaseDisplay().innerHTML = `
         <div id="showcase-header">
             <span>Helping you to be more productive</span>
         </div>
         `
-        domElements.projectShowcase.showcaseDisplay.classList.add("home-image")
+        domElements.projectShowcase.showcaseDisplay().classList.add("home-image")
     })
 }
 

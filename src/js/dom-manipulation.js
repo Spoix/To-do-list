@@ -1,15 +1,36 @@
 const domElements = {
     checklist: {
-        checklistDelete: document.querySelectorAll(".delete"),
-        checklistCheck: document.querySelectorAll(".check"),
-        checklistContainer: document.querySelector("#checklist-container"),
-        checklistAdd: document.querySelector("#checklist-add")
+        checklistDelete: () => {
+            return document.querySelectorAll(".delete")
+        },
+        checklistCheck: () => {
+            return document.querySelectorAll(".check")
+        },
+        checklistContainer: () => {
+            return document.querySelector("#checklist-container")
+        },
+        checklistAdd: () => {
+            return document.querySelector("#checklist-add")
+        }
     },
     projectShowcase: {
-        showcaseDisplay: document.querySelector("#showcase-display"),
-        selectDetails: document.querySelector("#showcase-details"),
-        selectChecklist: document.querySelector("#showcase-checklist"),
-        selectHome: document.querySelector("#showcase-home")
+        showcaseDisplay: () => {
+            return document.querySelector("#showcase-display")
+        },
+        selectDetails: () => {
+            return document.querySelector("#showcase-details")
+        },
+        selectChecklist: () => { 
+            return document.querySelector("#showcase-checklist")
+        },
+        selectHome: () => { 
+            return document.querySelector("#showcase-home")
+        }
+    },
+    projectListing: {
+        addProject: () => {
+            return document.querySelector("#project-listing").children[1]
+        }
     }
 }
 
