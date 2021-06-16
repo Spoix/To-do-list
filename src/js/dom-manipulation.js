@@ -1,4 +1,12 @@
 const domElements = {
+    baseElements: {
+        body: () => {
+            return document.querySelector("body")
+        },
+        html: () => {
+            return document.querySelector("html")
+        },
+    },
     checklist: {
         checklistDelete: () => {
             return document.querySelectorAll(".delete")
@@ -28,7 +36,7 @@ const domElements = {
         }
     },
     projectListing: {
-        addProject: () => {
+        openModal: () => {
             return document.querySelector("#project-listing").children[1]
         }
     }

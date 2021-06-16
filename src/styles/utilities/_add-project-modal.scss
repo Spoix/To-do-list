@@ -65,3 +65,15 @@
         transition: 1s;
     }
 }
+
+
+// Used when opening and closing modal
+.soft-fade {
+    opacity: 0.4;
+    transition: 1s;
+}
+
+.remove-fade {
+    opacity: 1;
+    transition: 1s;
+}

@@ -2,7 +2,7 @@ import "../styles/main.scss"
 import { showDetails, showChecklist, showHome } from './project-showcase-func'
 
 
-import { addProject } from './add-project'
+import { addProject, openModal } from './add-project'
 
 (function projectShowcaseFunc() {
     showDetails();
@@ -10,8 +10,12 @@ import { addProject } from './add-project'
     showHome();
 })();
 
+(function projectListingFunc() {
+    openModal();
+})();
 
-addProject()
+
+
 
 
 
