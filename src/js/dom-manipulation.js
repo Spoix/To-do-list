@@ -39,6 +39,26 @@ const domElements = {
         openModal: () => {
             return document.querySelector("#project-listing").children[1]
         }
+    },
+    projectModal: {
+        modalContent: () => {
+            return document.querySelector(".modal-content")
+        },
+        closeBtn: () => {
+            return document.querySelector("#close-modal")
+        },
+        addBtn: () => {
+            return document.querySelector("#add-project")
+        },
+        projectTitle: () => {
+            return document.querySelector("#modal-input-title")
+        },
+        projectDueDate: () => {
+            return document.querySelector("#modal-due-date")
+        },
+        projectPriority: () => {
+            return document.querySelector("#modal-priority")
+        }
     }
 }
 
