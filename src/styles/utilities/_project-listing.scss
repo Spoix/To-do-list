@@ -3,8 +3,10 @@
     border-radius: 0.5rem;
     margin-right: 2rem;
     height: 90%;
+    max-height: 90%;
     text-align: center;
     background-color: rgb(119, 159, 170);
+    overflow: hidden;
 
 
     p {
@@ -15,6 +17,7 @@
         border-radius: 1rem;
         width: 70%;
         margin: 0.5rem auto;
+        
     }
 
     button {
@@ -35,5 +38,29 @@
         background-color: white;
         border: none;
         transition: 0.5s;
+    }
+
+    #list {
+        max-height: inherit;
+        overflow: auto;
+        margin-top: 2rem;
+
+  
+
+        .projectItem {
+            font-size: 1.5rem;
+            border-left: 0.1rem solid white;
+            color: white;
+            font-weight: bold;
+            padding-left: 1rem;
+            margin-left: -30%;
+            display: inline-block;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            
+        }
+
+
+
     }
 }

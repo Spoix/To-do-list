@@ -1,6 +1,6 @@
 import { domElements } from "./dom-manipulation";
 import { customListeners } from './custom-listeners'
-import { addProject } from './project-adding'
+import { projectAdding } from './project-adding'
 
 const openModal = function() {
     domElements.projectListing.openModal().addEventListener('click', () => {
@@ -30,7 +30,7 @@ const openModal = function() {
         domElements.baseElements.html().addEventListener('modal', closeModal());
         modalBox.dispatchEvent(customListeners.modalCreated())
 
-        domElements.projectModal.addBtn().addEventListener('click', addProject)
+        domElements.projectModal.addBtn().addEventListener('click', projectAdding.addProject)
         
     })
 }

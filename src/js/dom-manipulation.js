@@ -33,9 +33,21 @@ const domElements = {
         },
         selectHome: () => { 
             return document.querySelector("#showcase-home")
+        },
+        projectName: () => {
+            return document.querySelector("#project-name")
+        },
+        projectDueDate: () => {
+            return document.querySelector("#due-date").children[1]
+        },
+        projectPriority: () => {
+            return document.querySelector("#priority").children[1]
         }
     },
     projectListing: {
+        list: () => {
+            return document.querySelector("#list")
+        }, 
         openModal: () => {
             return document.querySelector("#project-listing").children[1]
         }
