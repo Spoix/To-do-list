@@ -21,6 +21,17 @@ const domElements = {
             return document.querySelector("#checklist-add")
         }
     },
+    details: {
+        textArea: () => {
+            return document.querySelector("textarea")
+        },
+        addBtn: () => {
+            return document.querySelectorAll(".details-button")[0]
+        },
+        cancelBtn: () => {
+            return document.querySelectorAll(".details-button")[1]
+        }
+    },
     projectShowcase: {
         showcaseDisplay: () => {
             return document.querySelector("#showcase-display")

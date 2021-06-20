@@ -1,5 +1,5 @@
-import { modalWarning } from './project-modal-func'
-import { domElements } from './dom-manipulation'
+import { modalWarning } from './project-modal-func';
+import { domElements } from './dom-manipulation';
 
 
 const projectAdding = (() => {

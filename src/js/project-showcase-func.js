@@ -1,5 +1,6 @@
 import { domElements } from "./dom-manipulation"
 import { deleteItem, checkItem, addItem } from './checklist-func'
+import { cancelText, addText } from './details-func'
 
 
 
@@ -18,6 +19,8 @@ const showDetails = function () {
             </div>
         </div> 
         `
+    cancelText();
+    addText();
     });
 };
 
