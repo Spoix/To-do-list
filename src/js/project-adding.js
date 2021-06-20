@@ -1,5 +1,18 @@
 import { modalWarning } from './project-modal-func';
 import { domElements } from './dom-manipulation';
+import firebase from "firebase/app";
+import "firebase/database";
+
+const app = firebase.initializeApp({
+    apiKey: "AIzaSyDxDhzDuBK-v5DBJ3izN-FcpiztI_xHmyo",
+    authDomain: "todolist-bf4c5.firebaseapp.com",
+    databaseURL: "https://todolist-bf4c5-default-rtdb.firebaseio.com",
+    projectId: "todolist-bf4c5",
+    storageBucket: "todolist-bf4c5.appspot.com",
+    messagingSenderId: "608911971998",
+    appId: "1:608911971998:web:d31585215d68d99eee8d8f",
+    measurementId: "G-GF0ERWFPLR"
+});
 
 
 const projectAdding = (() => {
@@ -16,8 +29,28 @@ const projectAdding = (() => {
             }
 
             projectDOM.injectProject();
+            projectDB.writeProject();
 
         }
+
+        const projectDB = (() => {
+
+            const writeProject = () => {
+                const database = firebase.database();
+                const rootRef = database.ref('projects')
+
+                rootRef.child(newProject.projectTitle).set({
+                    title: newProject.projectTitle,
+                    dueDute: newProject.projectDueDate,
+                    priority: newProject.projectPriority
+                });
+            }
+
+            return {
+                writeProject
+            }
+
+        })();
     
         const projectDOM = (() => {
 
@@ -33,7 +66,6 @@ const projectAdding = (() => {
             }
 
             const domCreation = () => {
-                console.log("it ran")
                 // Project title in the listing panel
                 projectListingElm = document.createElement('span');
                 lineBreak = document.createElement("br")
@@ -54,7 +86,6 @@ const projectAdding = (() => {
             }
 
             const domInsertion = () => {
-                console.log("it ran")
                 // Insert project title in the listing panel
                 domElements.projectListing.list().appendChild(projectListingElm);
                 domElements.projectListing.list().appendChild(lineBreak);

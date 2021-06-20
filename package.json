@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "clean-webpack-plugin": "*",
+    "firebase": "^8.6.8",
     "node-sass": "^6.0.0",
     "ws": "^7.4.6"
   }
