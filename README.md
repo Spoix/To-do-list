@@ -1,16 +1,16 @@
-### To do list
+# To do list
 This to do list has the visual + DOM in place.
 
-### For futher reference
-## Disclaimer
+## For futher reference
+### Disclaimer
 The website is not responsive and was designed just as a mean to test a database management system.
 
 ## Webpack workflow and how to run the app
 [Check this out](https://github.com/viniciusLiimaa/Webpack-Default-Workflow)
 
-### Useful informations
+# Useful informations
 
-## Modules
+### Modules
 # index.js
 Entry point for webpack bundling.
 
