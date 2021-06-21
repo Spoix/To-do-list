@@ -1,9 +1,16 @@
-# To do list
-This to do list has the visual + DOM in place.
+# Project management application
+Designed to add personal projects and it's details, as well as a checklist of tasks related to it. It's being used firebase's realtime database as a mean of storaging user's information.
 
 ## For futher reference
-### Disclaimer
-The website is not responsive and was designed just as a mean to test a database management system.
+### Disclaimer 1
+The website is not responsive and was designed just as a mean to test firebase as personal practice.
+
+### Disclaimer 2
+The firebase config object is writen into a `.env` file in order to not expose it in github. In case you want to fork this repo just fill the `.env.sample` file with the info of the project you created on your own firebase console and rename it `.env`.
+
+In order for webpack to process environment variables I used [dotenv-webpack](https://www.npmjs.com/package/dotenv-webpack). The installation and implementation processes followed the steps described in the documentation.
+
+It's also worth noting that after forking this repo, you should include `.env` to the `.gitignore` file.
 
 ## Webpack workflow and how to run the app
 [Check this out](https://github.com/viniciusLiimaa/Webpack-Default-Workflow)
@@ -34,6 +41,9 @@ Contains everyting related to the functionality of the checklist section of the 
 
 ### details-func.js
 Contains the logic to handle the information inserted into the details's textarea, wheter it's to add or cancel the input.
+
+### firebase.js
+Contains firebase main configuration
 
 ## Styles
 ### main.scss

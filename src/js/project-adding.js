@@ -1,18 +1,8 @@
 import { modalWarning } from './project-modal-func';
 import { domElements } from './dom-manipulation';
-import firebase from "firebase/app";
-import "firebase/database";
 
-const app = firebase.initializeApp({
-    apiKey: "AIzaSyDxDhzDuBK-v5DBJ3izN-FcpiztI_xHmyo",
-    authDomain: "todolist-bf4c5.firebaseapp.com",
-    databaseURL: "https://todolist-bf4c5-default-rtdb.firebaseio.com",
-    projectId: "todolist-bf4c5",
-    storageBucket: "todolist-bf4c5.appspot.com",
-    messagingSenderId: "608911971998",
-    appId: "1:608911971998:web:d31585215d68d99eee8d8f",
-    measurementId: "G-GF0ERWFPLR"
-});
+import './services/firebase'
+import firebase from "firebase/app";
 
 
 const projectAdding = (() => {
